@@ -1,7 +1,7 @@
-Code Book
+#Code Book
 Description of the original data and the R code used to transform the data to meet Cleaning Data Course Project Requirements.
 
-Original Dataset
+#Original Dataset
 
 The data is downloaded from the following website as a zip file:
 "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -37,7 +37,7 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The set of variables that were estimated from these signals that were USED for this analysis were the following: mean(): Mean value and std(): Standard deviation
 
-Raw Data transformation
+#Description of R program
 
 The raw data sets are processed with the script run_analysis.R script to create a tidy data set.
 
@@ -50,7 +50,7 @@ Transform variable names to meet data requirement outlined in course documentati
 Create a tidy data set From the intermediate data set is created a final tidy data set where numeric variables are averaged for each activity and each subject.
 Tidy data set
 
-Variables
+#Final Dataset and Variable Description
 The tidy data set contains :
 •	an identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30.
 •	an activity label (Label, factor variable) with factor labels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
