@@ -1,0 +1,64 @@
+Code Book
+Description of the original data and the R code used to transform the data to meet Cleaning Data Course Project Requirements.
+
+Original Dataset
+
+The data is downloaded from the following website as a zip file:
+"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
+The following files located in the zip folder describe the original data:
+
+README.txt
+Features_info.txt
+Activities_labels.txt
+
+The following files contain the data used in the R code described here:
+
+features.txt
+train/subject_train.txt
+train/X_train.txt
+train/y_train.txt
+test/subject_ test.txt
+test/X_ test.txt
+test/y_ test.txt
+
+
+As described in the features_info.txt document, the data is as follows:
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The set of variables that were estimated from these signals that were USED for this analysis were the following: mean(): Mean value and std(): Standard deviation
+
+Raw Data transformation
+
+The raw data sets are processed with the script run_analysis.R script to create a tidy data set.
+
+Download and unzip raw files
+Import training and test to R
+Merge the separate training and test sets with subject and activity labels
+Subset to include only the mean and standard deviation variables
+Transform the Activity Label to a factor and provide label names from original support files.
+Transform variable names to meet data requirement outlined in course documentation: no whitespace, all lowercase letters and no special symbols or underlines.
+Create a tidy data set From the intermediate data set is created a final tidy data set where numeric variables are averaged for each activity and each subject.
+Tidy data set
+
+Variables
+The tidy data set contains :
+•	an identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30.
+•	an activity label (Label, factor variable) with factor labels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+Variables of the mean of the following measurements by subject and activity type:
+Each measurement is calculated for each of 3 axial signals: '-XYZ' in the X, Y and Z directions.
+1)Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+2)Magnitude signals (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+3)Transformed Jerk and Magnitude signals (fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag)
+
+
+
