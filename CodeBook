@@ -3,7 +3,9 @@ Description of the original data and the R code used to transform the data to me
 
 #Original Dataset
 
-The data is downloaded from the following website as a zip file:
+The data for this project is from the following study: Human Activity Recognition Using Smartphones Data Set 
+
+The data is downloaded from the UCI learning repository as a zip file:
 "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 The following files located in the zip folder describe the original data:
