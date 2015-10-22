@@ -46,7 +46,7 @@ Data Download and Formatting
   -Subset dataset based on the following matches: "mean\\(|std\\(|Subject|Label"
 
 #Step 3 Assignment: Use descriptive activity names to name the activities in the data set
-  -To meet this requirement I set "Label" as a Factor variable and labeled the factor with description of the activity:   
+  -To meet this requirement I set the activity (Label) as a Factor variable and labeled the factor with description of the activity:   
   -"Walking", "Walking Upstairs", "Walking Downstairs", "Sitting", "Standing", "Laying"
 
 #Step 4 Assignment:Appropriately labels the data set with descriptive variable names. 
