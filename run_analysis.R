@@ -1,4 +1,5 @@
-#Helpful Page: https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
+#Set Working Directory
+setwd("~/UCI HAR Dataset")
 
 #Load essential libraries
 library("downloader")
@@ -10,9 +11,6 @@ download("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20H
 unzip ("dataset.zip")
 
 #Link to Data Description: http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names
-
-#Set Working Directory
-setwd("/Volumes/TOSHIBA EXT/PAHO_Drive/Coursera/datacleaning/UCI HAR Dataset")
 
 #read in column names from feature .text file save as list with characters
 features <- as.list(as.character((read.table("features.txt", header=F)[,2])))
