@@ -1,7 +1,8 @@
 # Synopsis
 Getting and Cleaning Data Final Project Repository
 
-  This repository contains the files to complete the course project for the Coursera course Getting and Cleaning Data:
+  This repository contains the files to complete the course project for the 
+  Coursera course Getting and Cleaning Data:
   
       -README: description of repository and files
       
@@ -9,7 +10,8 @@ Getting and Cleaning Data Final Project Repository
       
       -run_analysis.R: R code following Course Requirements
     
-      -A .txt file with the final dataset was also uploaded to the Coursera site to finalize the course requirements. 
+      -A .txt file with the final dataset was also uploaded to the Coursera site to 
+      finalize the course requirements. 
 
 #CODE: run_analysis.R
   
@@ -47,17 +49,22 @@ Step 2: Extract only the measurements on the mean and standard deviation for eac
 
 Step 3: Use descriptive activity names to name the activities in the data set
 
-    -To meet this requirement I set the activity (Label) as a Factor variable and labeled the factor with description of the activity:   
+    -To meet this requirement I set the activity (Label) as a Factor variable and labeled the 
+    factor with description of the activity:   
     -"Walking", "Walking Upstairs", "Walking Downstairs", "Sitting", "Standing", "Laying"
 
 Step 4:Appropriately labels the data set with descriptive variable names. 
 
-    -The dataset is labelled with the names provided by the original authors but reformatted with the white spaces and other symbols removed and changed to all lowercase to follow class requirements per the following link:
+    -The dataset is labelled with the names provided by the original authors but reformatted with the 
+    white spaces and other symbols removed and changed to all lowercase to follow class 
+    requirements per the following link:
     -https://class.coursera.org/getdata-033/forum/thread?thread_id=126
 
-Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of 
+each variable for each activity and each subject.
 
-    -data is formatted in long format, with a row for each subject and activity type. Each subject, therefore, has 6 rows, one for each activity.
+    -data is formatted in long format, with a row for each subject and activity type. Each subject, 
+    therefore, has 6 rows, one for each activity.
 
 Step 6: data set as a txt file created with write.table() using row.name=FALSE
 
